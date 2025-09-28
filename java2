@@ -1,0 +1,17 @@
+import javax.swing.*;
+class Multi
+{
+public static void main(String args[])
+{
+String a,b,c;
+int x,y,z,result;
+a= JOptionPane.showInputDialog("enter a");
+b= JOptionPane.showInputDialog("enter b");
+c= JOptionPane.showInputDialog("enter c");
+x=Integer.parseInt(a);
+y=Integer.parseInt(b);
+z=Integer.parseInt(c);
+result=x*y*z;
+JOptionPane.showMessageDialog(null,"the sum is"+"result");
+}
+}
