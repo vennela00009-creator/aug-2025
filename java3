@@ -1,0 +1,18 @@
+import javax.swing.*;
+class Come
+{
+public static void main(String args[])
+{
+String output=" ";
+int count;
+for (count=1;count<=10;count++)
+{
+if(count==5)
+Countinue;
+output +=count+" ";
+}
+output +="\n.Broke out of loop at count=**"+count;
+JOptionPane.showMessageDialog(null,output);
+System.exit(0);
+}
+}
