@@ -1,0 +1,18 @@
+class B
+{
+public static int gcd(inta,intb)
+{
+if(b==0)
+return a;
+else
+return(gcd(b,a%b));
+}
+}
+class Bv{
+public static void main(String args[])
+{
+int num1=48,num2=18;
+int result=gcd(num1,num2);
+System.out.println("gcd of"+num1+"and"+num2+"is:"+result);
+}
+}
