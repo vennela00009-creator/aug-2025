@@ -1,0 +1,23 @@
+import java.util.Scanner; // Import the Scanner class to read user input
+
+public class UserGreeting {
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the console
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter their name
+        System.out.print("Enter your name: ");
+        String userName = scanner.nextLine(); // Read the user's name as a String
+
+        // Prompt the user to enter their age
+        System.out.print("Enter your age: ");
+        int userAge = scanner.nextInt(); // Read the user's age as an integer
+
+        // Display a greeting message using the collected information
+        System.out.println("Hello, " + userName + "! You are " + userAge + " years old.");
+
+        // Close the scanner to release system resources
+        scanner.close();
+    }
+}
