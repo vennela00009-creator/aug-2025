@@ -1,0 +1,26 @@
+import java.util.Scanner; // 1. Import the Scanner class
+
+public class UserAge {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the console (System.in)
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter their name
+        System.out.print("Enter your name: ");
+
+        // Read the user's input (a full line of text) as a String
+        String userName = scanner.nextLine();
+
+        // Prompt the user to enter their age
+        System.out.print("Enter your age: ");
+
+        // Read the user's input as an integer
+        int userAge = scanner.nextInt();
+
+        // Display the user's input in a final message
+        System.out.println("Hello, " + userName + "! You are " + userAge + " years old.");
+
+        // It's good practice to close the Scanner to prevent resource leaks
+        scanner.close();
+    }
+}
