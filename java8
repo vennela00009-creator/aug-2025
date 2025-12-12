@@ -1,0 +1,26 @@
+# Create strings with single, double, or triple quotes
+string1 = 'Hello, world!'
+string2 = "Python programming"
+multiline_string = """This is a
+multiline string."""
+
+# Concatenation (joining strings) using the '+' operator or f-strings
+full_string = string1 + " " + string2
+print(full_string) # Output: Hello, world! Python programming
+
+# Accessing individual characters (indexing)
+first_char = string1[0]
+print(f"First character: {first_char}") # Output: First character: H
+
+# Getting the length of a string
+length = len(string2)
+print(f"Length of string2: {length}") # Output: Length of string2: 18
+
+# String methods
+uppercase_string = string2.upper()
+print(f"Uppercase: {uppercase_string}") # Output: Uppercase: PYTHON PROGRAMMING
+
+# Using f-strings for dynamic formatting (recommended in Python 3.6+)
+name = "Alice"
+age = 22
+print(f"Name: {name}, Age: {age}") # Output: Name: Alice, Age: 22
