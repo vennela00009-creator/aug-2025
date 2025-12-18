@@ -1,0 +1,16 @@
+public class ReverseStringBuiltIn {
+    public static void main(String[] args) {
+        String originalStr = "Hello World";
+        // Create a StringBuilder object and append the original string
+        StringBuilder sb = new StringBuilder(originalStr);
+
+        // Use the built-in reverse() method
+        sb.reverse();
+
+        // Convert the StringBuilder back to a String (if needed)
+        String reversedStr = sb.toString();
+
+        System.out.println("Original string: " + originalStr);
+        System.out.println("Reversed string: " + reversedStr);
+    }
+}
