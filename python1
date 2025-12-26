@@ -1,0 +1,22 @@
+import org.python.util.PythonInterpreter;
+import org.python.core.PyObject;
+import org.python.core.PyInteger;
+
+public class JythonExample {
+    public static void main(String[] args) {
+        // Initialize the interpreter
+        try (PythonInterpreter pyInterp = new PythonInterpreter()) {
+            // Execute a simple Python print statement
+            pyInterp.exec("print('Hello Python World from Java!')");
+
+            // Pass Java variables to Python, run a script, and get the result back
+            int number1 = 10;
+            int number2 = 32;
+            pyInterp.set("number1", new PyInteger(number1));
+            pyInterp.set("number2", new PyInteger(number2));
+            pyInterp.exec("number3 = number1 + number2");
+            PyObject number3 = pyInterp.get("number3");
+            System.out.println("Result from Python: " + number3.toString());
+        }
+    }
+}
