@@ -1,0 +1,15 @@
+import openai
+
+# Initialize the client with your API key
+client = openai.OpenAI(api_key="your-api-key-here")
+
+# Function to get a response from the AI
+def ask_ai(prompt):
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+
+# Test the AI
+print(ask_ai("Explain Python decorators in one sentence."))
