@@ -1,0 +1,35 @@
+public class StringExample {
+    public static void main(String[] args) {
+        // 1. Creating strings using string literals
+        String greeting = "Hello";
+        String space = " ";
+        String world = "World";
+        
+        // 2. Concatenating strings using the + operator
+        String fullMessage = greeting + space + world + "!";
+        System.out.println("Concatenated String: " + fullMessage);
+
+        // 3. Getting the length of a string
+        int length = fullMessage.length();
+        System.out.println("Length of the string: " + length);
+
+        // 4. Accessing a specific character
+        char firstChar = fullMessage.charAt(0);
+        System.out.println("First character: " + firstChar);
+
+        // 5. Converting to uppercase
+        String upperCaseMessage = fullMessage.toUpperCase();
+        System.out.println("Uppercase: " + upperCaseMessage);
+
+        // 6. Checking for a substring
+        boolean containsWorld = fullMessage.contains("World");
+        System.out.println("Contains 'World'? " + containsWorld);
+
+        // 7. Comparing strings (content comparison)
+        String anotherString = "hello World!";
+        boolean areEqual = fullMessage.equals(anotherString);
+        System.out.println("Are the two strings equal? " + areEqual); // false because of case
+        boolean areEqualIgnoreCase = fullMessage.equalsIgnoreCase(anotherString);
+        System.out.println("Are they equal (ignoring case)? " + areEqualIgnoreCase); // true
+    }
+}
